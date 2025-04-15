@@ -2,10 +2,55 @@ Problem Link -- https://www.geeksforgeeks.org/problems/reverse-an-array/1?itm_so
 
 Solution :
 
-Approach ->
-
-1- 
-
-
-
 C++
+
+Two Pointer Approach :
+
+class Solution {
+
+   void  reverse(ivector<char> s, int i, int j){
+        
+        while(i < j){
+            swap(s[i],s[j]); // In Built Method
+            i++;
+            j--;
+            // int temp=arr[i];   Manualy Swaping 
+            // arr[i]=arr[j];
+            // arr[j]=temp;
+            // i++;
+            // j--;
+        } 
+    }
+
+public: void reverseString(vector<char>& s) {
+
+    reverse(s, 0, s.size()-1);
+
+};
+
+-----------
+
+Java 
+
+Two Pointer Approach :
+
+class Solution {
+    
+   static void  reverse(int arr[], int i, int j){
+        
+        while(i < j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+        
+    }
+    
+    public void reverseArray(int arr[]) {
+        
+        reverse (arr, 0, arr.length-1);
+        
+    }
+}
