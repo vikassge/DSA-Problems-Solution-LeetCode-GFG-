@@ -4,7 +4,7 @@ Solution :
 
 C++
 
-Two Pointer Approach :
+Two Pointer Approach : O(n) , O(1)
 
 class Solution {
 
